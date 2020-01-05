@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/56c1389eda.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cyborg/bootstrap.min.css">
+    <title>BookList</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center text-success"><i class="fas fa-book-open"></i>BookList</h1>
+        
+        <form id="book-form">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" class="form-control"> 
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" id="author" class="form-control">
+            </div>
+             <div class="form-group">
+                 <label for="isbn">ISBN#</label>
+                 <input type="text" id="isbn" class="form-control">
+             </div>
+            <input class="btn btn-success btn-block mt-2" type="submit" value="Add Book">
+        </form>
+<table class="table table mt-5">
+    <thead>
+        <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+            <th scope="col">ISBN#</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="book-list"></tbody>
+</table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
